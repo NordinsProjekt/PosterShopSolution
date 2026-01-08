@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+/* End of CSS Reset */
+
+/* Header Styles */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #3DE07E;
+    color: black;
+    width: auto;
+    height: 608px;
+    opacity: 1;
+    text-align: center;
+}
+
+header aside {
+    align-self: flex-start;
+    margin: 32px;
+    width: 28px;
+    height: 20px;
+}
+
+header h1 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 102px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header > img {
+    width: 241px;
+    height: 152px;
+    opacity: 1;
+}
+
+h2 {
+    font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+p {
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: 0%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 94px auto;
+    width: auto;
+    background: black;
+}
+
+.wrapper > article.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: none;
+    align-items: left;
+    width: 310px;
+    height: 600px;
+    color: white;
+    gap: 16px;
+    margin-bottom: 97px;
+}
+
+.promoted > article.card > p {
+    overflow: hidden; /* Hide overflow text */
+}
+
+.button {
+    margin-top: auto; /* Push button to the bottom */
+    width: 50%;
+    background: #E83F57;
+    color: white;
+    font-weight: 700;
+    opacity: 1;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+.card > img {
+    width: 310px;
+}
+
+/* Promoted */
+.wrapper, .promoted{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.promoted > article.big-card{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: black;
+    background-color: white;
+    width: 480px;
+    height: 800px;
+    gap: 16px;
+}
+
+.promoted > article.big-card > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: left;
+    gap: 16px;
+    margin: 24px;
+}
+
+.promoted > article.big-card > figure > p {
+    margin-bottom: 32px;
+}
+
+.promoted > article.big-card > section > button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+article.big-card > .button {
+    margin: 16px;
+}
+
+/* End Promoted */
+
+footer{
+    background: #FFFFFF33;
+    padding-top: 59px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Fira Sans;
+    color: white;
+    width: auto;
+    height: 320px;
+    opacity: 1;
+    gap: 20px;
+}
+
+.footer-links h2{
+    margin-bottom: 20px;
+}
+
+.footer-links > nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
