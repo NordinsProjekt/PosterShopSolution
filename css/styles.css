@@ -61,7 +61,7 @@ header aside {
 }
 
 header h1 {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 102px;
     line-height: 100%;
@@ -77,14 +77,14 @@ header > img {
 }
 
 h2 {
-    font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
 }
 
 p {
-    font-family: Fira Sans;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
@@ -147,6 +147,20 @@ main {
     gap: 16px;
 }
 
+.main-checkout {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    color: white;
+}
+
+.main-checkout > h2 {
+    margin-bottom: 48px;
+    font-size: 3rem;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
 .promoted > article.big-card{
     display: flex;
     flex-direction: column;
@@ -156,6 +170,27 @@ main {
     width: 480px;
     height: 800px;
     gap: 16px;
+}
+
+.promoted > article.big-card-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: black;
+    background-color: white;
+    width: 485px;
+    height: 640px;
+    gap: 16px;
+}
+
+.promoted > article.big-card-checkout > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: left;
+    gap: 16px;
+    margin: 24px;
 }
 
 .promoted > article.big-card > section {
@@ -192,7 +227,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-family: Fira Sans;
+    font-family: Fira Sans, Arial, Helvetica, sans-serif;
     color: white;
     width: auto;
     height: 320px;
@@ -213,4 +248,117 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 16px;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+
+.table-wrapper{
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    padding: 0 16px;
+    margin-top: 89px;
+}
+
+thead th {
+    background: #ED363633;
+    font-size: 24px;
+    padding: 12px 0;
+}
+
+tbody td {
+    padding: 12px 0;
+    font-size: 32px;
+}
+
+.endrow{
+    border-top: 2px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #2ca564;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.hamburger-menu:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #248a52;
+}
+
+.dropdown-menu a:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown-menu a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+/* Responsive Table Styles */
+@media screen and (max-width: 768px) {
+    .table-wrapper {
+        padding: 0 8px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    thead th,
+    tbody td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+    
+    thead th,
+    tbody td {
+        padding: 6px 4px;
+    }
 }
